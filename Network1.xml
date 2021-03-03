@@ -1,0 +1,81 @@
+<!--
+WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
+OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
+  virsh net-edit Network1
+or other application using the libvirt API.
+-->
+
+<network>
+  <name>Network1</name>
+  <uuid>5d14e9d6-5cb6-412f-a82b-a0ea97e4a7b2</uuid>
+  <forward mode='nat'/>
+  <bridge name='virbr1' stp='on' delay='0'/>
+  <mac address='52:54:00:81:6d:e0'/>
+  <domain name='idodoroz.com' localOnly='yes'/>
+  <dns>
+    <host ip='192.168.100.10'>
+      <hostname>rhel-client</hostname>
+    </host>
+    <host ip='192.168.100.20'>
+      <hostname>rhel-server</hostname>
+    </host>
+    <host ip='192.168.100.30'>
+      <hostname>she-engine</hostname>
+    </host>
+    <host ip='192.168.100.100'>
+      <hostname>the-engine</hostname>
+    </host>
+    <host ip='192.168.100.200'>
+      <hostname>hosted-engine-3.6</hostname>
+    </host>
+    <host ip='192.168.100.11'>
+      <hostname>engine-36</hostname>
+    </host>
+    <host ip='192.168.100.80'>
+      <hostname>host1</hostname>
+    </host>
+    <host ip='192.168.100.180'>
+      <hostname>ngn-host1</hostname>
+    </host>
+    <host ip='192.168.100.190'>
+      <hostname>vn-host2</hostname>
+    </host>
+    <host ip='192.168.100.90'>
+      <hostname>host2</hostname>
+    </host>
+    <host ip='192.168.100.173'>
+      <hostname>host3</hostname>
+    </host>
+    <host ip='192.168.100.50'>
+      <hostname>nfs-server</hostname>
+    </host>
+    <host ip='192.168.100.60'>
+      <hostname>iscsi-server</hostname>
+    </host>
+    <host ip='192.168.100.70'>
+      <hostname>cockpit-ovirt</hostname>
+    </host>
+    <host ip='192.168.100.150'>
+      <hostname>rhel75-host1</hostname>
+    </host>
+  </dns>
+  <ip address='192.168.100.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.100.128' end='192.168.100.254'/>
+      <host mac='52:54:00:b7:88:0e' name='rhel-client' ip='192.168.100.10'/>
+      <host mac='52:54:00:11:d2:af' name='rhel-server' ip='192.168.100.20'/>
+      <host mac='22:22:22:22:22:22' name='the-engine' ip='192.168.100.100'/>
+      <host mac='52:54:00:21:c0:31' name='host1' ip='192.168.100.80'/>
+      <host mac='52:54:00:f7:52:39' name='host2' ip='192.168.100.90'/>
+      <host mac='52:54:00:c7:55:eb' name='host3' ip='192.168.100.173'/>
+      <host mac='52:54:00:f2:16:a9' name='ngn-host1' ip='192.168.100.180'/>
+      <host mac='52:54:00:e5:88:3e' name='vn-host2' ip='192.168.100.190'/>
+      <host mac='52:54:00:fa:6a:7a' name='nfs-server' ip='192.168.100.50'/>
+      <host mac='12:12:12:12:12:12' name='ovirt-engine' ip='192.168.100.30'/>
+      <host mac='52:54:00:8b:0f:54' name='iscsi-server' ip='192.168.100.60'/>
+      <host mac='52:54:00:1e:a4:4e' name='cockpit-ovirt' ip='192.168.100.70'/>
+      <host mac='52:54:00:eb:75:42' name='hosted-engine-36.ido' ip='192.168.100.200'/>
+      <host mac='52:54:00:41:51:30' name='rhel75-host1' ip='192.168.100.150'/>
+    </dhcp>
+  </ip>
+</network>
